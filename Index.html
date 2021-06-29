@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h1>¡Formulario Foudation!</h1>
+
+    <form data-abide novalidate>
+        <div data-abide-error class="alert callout" style="display: none;">
+          <p><i class="fi-alert"></i> There are some errors in your form.</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="cell small-12">
+              <label>Correo Electronico
+                <input type="text" placeholder="example1Hint1@email" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                <span class="form-error">
+                </span>
+              </label>
+            <p class="help-text" id="example1Hint1"></p>
+            </div>
+            <div class="cell small-12">
+              <label>Contraseña Requerida
+                <input type="password" id="password" placeholder="Contraseña" aria-describedby="example1Hint2" aria-errormessage="example1Error2" required >
+                <span class="form-error">
+                </span>
+              </label>
+              <p class="help-text" id="example1Hint2">Ingrese Contraseña Por Favor</p>
+            </div>
+            <div class="cell small-12">
+              <label>Ingrese de nuevo la Contraseña
+                <input type="password" placeholder="Contraseña" aria-describedby="example1Hint3" aria-errormessage="example1Error3" required pattern="alpha_numeric" data-equalto="password">
+                <span class="form-error">
+                </span>
+              </label>
+          </div>
+        </div>
+        
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6">
+              <label>Patrón de URL, no es obligatorio, pero arroja un error si no coincide con la expresión regular de una URL válida.
+                <input type="text" placeholder="https://get.foundation" pattern="url">
+              </label>
+            </div>
+            <div class="cell large-6">
+              <label>Patrón de URL, no es obligatorio, pero arroja un error si no coincide con la expresión regular de una URL válida.
+                <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6">
+              <label>!Vehículos¡, elija uno, no puede ser la opción en blanco.
+                <select id="select" required>
+                  <option value=""></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </label>
+            </div>
+            <fieldset class="cell large-6">
+              <legend>Selecciona uno!</legend>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Verificación 1</label>
+              <input id="checkbox2" type="checkbox" required><label for="checkbox2">Verificación 2</label>
+              <input id="checkbox3" type="checkbox"><label for="checkbox3">Verificación 3</label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <fieldset class="cell large-6">
+              <legend>Elija su favorito: no es obligatorio, puede dejar este en blanco.</legend>
+              <input type="radio" name="pockets" value="Verde" id="pocketsgreen"><label for="pocketsRed">Verde</label>
+              <input type="radio" name="pockets" value="Azul" id="pocketsBlue"><label for="pocketsBlue">Azul</label>
+              <input type="radio" name="pockets" value="Naranja" id="pocketsorange"><label for="pocketsYellow">Naranja</label>
+            </fieldset>
+            <fieldset class="cell large-6">
+              <legend>Elija su favorito: no es obligatorio, puede dejar este en blanco.</legend>
+              <input type="radio" name="pokemon" value="Rojo" id="pokemonRed"><label for="pokemonRed">Rojo</label>
+              <input type="radio" name="pokemon" value="Azul" id="pokemonBlue" required><label for="pokemonBlue">Azul</label>
+              <input type="radio" name="pokemon" value="Amarillo" id="pokemonYellow"><label for="pokemonYellow">Amarillo</label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <fieldset class="cell large-6">
+              <button class="button" type="submit" value="Submit">Enviar</button>
+            </fieldset>
+            <fieldset class="cell large-6">
+              <button class="button" type="reset" value="Reset">Reiniciar</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <body style="background-color:#bdfffc;">
+    </body>
+</body>
+</html>
